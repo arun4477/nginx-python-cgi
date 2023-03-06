@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 30%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<h3> 5Paisa account details </h3>
+
+<div class="container">
+  <form action="/cgi-bin/app.py" method="post">
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="email" placeholder="Email" value="asanjay96@gmail.com">
+    <br>
+    <label for="5paisa-password">5Paisa password</label><br>
+    <input type="text" id="5paisa-password" name="5paisa-password" placeholder="5paisa password" value="asdf@1243">
+    <br>
+    <label for="dob">DOB</label><br>
+    <input type="text" id="dob" name="dob" placeholder="YYYYMMDD" value="19960215">
+    <br>
+    <label for="appname">App name</label><br>
+    <input type="text" id="appname" name="appname" placeholder="App name" value="5P50882761">
+    <br>
+    <label for="appsource">App source</label><br>
+    <input type="text" id="appsource" name="appsource" placeholder="App source" value="15267">
+    <br>
+    <label for="userid">User ID</label><br>
+    <input type="text" id="userid" name="userid" placeholder="User ID" value="zMy0tlSzFnE">
+    <br>
+    <label for="password">Password</label><br>
+    <input type="text" id="password" name="password" placeholder="Password" value="TDfHLJOvfKv">
+    <br>
+    <label for="userkey">User key</label><br>
+    <input type="text" id="userkey" name="userkey" placeholder="User key" value="hxeNKd4GUOGvdUr3CDnmxEPvQQbxK7j1">
+    <br>
+    <label for="encryptionkey">Encryption key</label><br>
+    <input type="text" id="encryptionkey" name="encryptionkey" placeholder="User key" value="Ap1jaV5ABAGOSerMUd4UAOQWsz03GGK0">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
